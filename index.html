@@ -48,6 +48,15 @@
       height: auto;
     }
 
+    .boy-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 4px solid #d63384;
+    }
+
     .details {
       display: none;
       margin-top: 20px;
@@ -61,7 +70,7 @@
 
     .box h2 {
       color: #d63384;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
 
     .box:hover {
@@ -71,15 +80,18 @@
 </head>
 <body>
 
-  <!-- Flower background image -->
+  <!-- Background image -->
   <img src="flowers-bg.jpg" alt="Flower Background" class="bg-image">
 
-  <!-- Invitation box -->
   <div class="container">
     <div class="box" onclick="expandBox(this)">
       <h2>🎉 You're Invited! 🎉</h2>
+      
+      <!-- Birthday Boy's Photo -->
+      <img src="dasvanth.jpg" alt="Dasvanth" class="boy-image">
+
       <div class="details">
-        <p><strong>Dasvanth 1st Birthday</strong></p>
+         <p><strong>Dasvanth 1st Birthday</strong></p>
         <p><strong>🎂 Date: 18th September 2025</strong></p>
         <p><strong>⏰ Time: 6:00 PM onwards</strong></p>
         <p><strong>🏠 Venue: Home, Madurai</strong></p>
