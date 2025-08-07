@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Dasvanth's 1st Birthday Invitation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
       font-family: 'Segoe UI', sans-serif;
-      overflow: hidden;
+      overflow-x: hidden;
     }
 
     /* Full background image */
@@ -28,14 +29,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 20px;
     }
 
     .box {
       background: rgba(255, 255, 255, 0.9);
       border-radius: 20px;
-      padding: 30px;
+      padding: 25px 15px;
       max-width: 500px;
-      width: 300px;
+      width: 100%;
       text-align: center;
       cursor: pointer;
       transition: all 0.5s ease;
@@ -44,13 +46,12 @@
     }
 
     .box.expanded {
-      width: 90%;
       height: auto;
     }
 
     .boy-image {
-      width: 150px;
-      height: 150px;
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 15px;
@@ -61,7 +62,7 @@
       display: none;
       margin-top: 20px;
       color: #444;
-      font-size: 18px;
+      font-size: 16px;
     }
 
     .box.expanded .details {
@@ -71,10 +72,30 @@
     .box h2 {
       color: #d63384;
       margin-bottom: 10px;
+      font-size: 22px;
     }
 
     .box:hover {
       box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+    }
+
+    @media screen and (max-width: 480px) {
+      .box {
+        padding: 20px 10px;
+      }
+
+      .boy-image {
+        width: 110px;
+        height: 110px;
+      }
+
+      .box h2 {
+        font-size: 20px;
+      }
+
+      .details {
+        font-size: 15px;
+      }
     }
   </style>
 </head>
@@ -91,11 +112,11 @@
       <img src="dasvanth.jpg" alt="Dasvanth" class="boy-image">
 
       <div class="details">
-         <p><strong>Dasvanth 1st Birthday</strong></p>
+        <p><strong>Dasvanth 1st Birthday</strong></p>
         <p><strong>🎂 Date: 18th September 2025</strong></p>
         <p><strong>⏰ Time: 6:00 PM onwards</strong></p>
         <p><strong>🏠 Venue: Home, Madurai</strong></p>
-        <p><strong>With love❤️ from: Mr.K.Dinesh Kumar & Mrs.G.Pandimeena</strong></p>
+        <p><strong>With love ❤️ from: Mr. K. Dinesh Kumar & Mrs. G. Pandimeena</strong></p>
       </div>
     </div>
   </div>
